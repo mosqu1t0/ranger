@@ -216,7 +216,7 @@ class fzf_select(Command):
        env['FZF_DEFAULT_COMMAND'] = fzf_default_command
        env['FZF_DEFAULT_OPTS'] = '--height=100% --layout=reverse --ansi --preview="{}"'.format('''
            (
-               ~/Tools/Other/fzf-scope.sh {} ||
+               ~/zsh/fzf-scope.sh {} ||
                #batcat --color=always {} ||
                #bat --color=always {} ||
                #cat {} ||
